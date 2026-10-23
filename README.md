@@ -1219,7 +1219,7 @@ The home page provides navigation to the main features of the Hotel Management S
 
 ## 🛏️ Room Page
 
-![Hotel Rooms](./screenshots/room.jpeg)
+![Hotel Rooms](./screenshot/room.jpeg)
 
 The room page displays the available hotel rooms and their prices.
 
