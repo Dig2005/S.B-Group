@@ -1,0 +1,33 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* hides any horizontal scroll */
+}
+
+.heroo {
+    background: url('/images/palm-meadows-club.jpg') center/cover no-repeat;
+    color: white;
+
+    padding: 100px 20px;
+
+
+
+}
+
+h1{
+    padding-left: 40px;
+
+    color: white;
+    justify-content: left;
+}
+.welcome{
+
+}
+.hotel{
+    margin-top: -20px;
+}
+p{
+    padding-top: 0.0001px;
+    padding-left: 40px;
+    color: #ffcc00;
+}

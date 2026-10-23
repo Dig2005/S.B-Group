@@ -1,0 +1,13 @@
+.footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+.footer-links{
+    text-align: left;
+    gap: 10px;
+}
+.footer-links a{
+    gap: 10px;
+}

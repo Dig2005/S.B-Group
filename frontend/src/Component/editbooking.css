@@ -1,0 +1,421 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.edit-booking-page {
+    min-height: 100vh;
+    background: #ffffff;
+    color: #303445;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.edit-header {
+    height: 72px;
+    background: linear-gradient(90deg, #2868ae, #2363ad);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.edit-header h1 {
+    margin: 0;
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+/* ==========================================
+   MAIN CONTAINER
+========================================== */
+
+.edit-container {
+    width: 88%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 25px 0 25px;
+}
+
+/* ==========================================
+   VERIFY SECTION
+========================================== */
+
+.verify-text {
+    margin: 0;
+    font-size: 19px;
+    color: #303445;
+    line-height: 1.4;
+}
+
+.dashed-line {
+    border-top: 2px dashed #d0d0d0;
+    margin: 14px 0 22px;
+}
+
+.verify-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 22px;
+    align-items: end;
+}
+
+.verify-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.verify-field label {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.verify-field input {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #c9c9ce;
+    border-radius: 5px;
+    padding: 0 14px;
+    font-size: 17px;
+    color: #303445;
+    outline: none;
+}
+
+.verify-field input:focus {
+    border-color: #2870b8;
+    box-shadow: 0 0 0 3px rgba(40, 112, 184, 0.1);
+}
+
+.verify-button {
+    grid-column: 1 / 3;
+    justify-self: center;
+    margin-top: 18px;
+    width: 250px;
+    height: 48px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #286ab1, #2363ac);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.verify-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(35, 99, 172, 0.25);
+}
+
+.verify-button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+/* ==========================================
+   MESSAGES
+========================================== */
+
+.success-message {
+    margin-top: 15px;
+    padding: 10px 14px;
+    border-radius: 5px;
+    background: #e4f7e8;
+    border: 1px solid #8bd19a;
+    color: #197331;
+    font-size: 14px;
+}
+
+.error-message {
+    margin-top: 15px;
+    padding: 10px 14px;
+    border-radius: 5px;
+    background: #ffe8e8;
+    border: 1px solid #efaaaa;
+    color: #bd2020;
+    font-size: 14px;
+}
+
+/* ==========================================
+   EDIT SECTION
+========================================== */
+
+.edit-section {
+    margin-top: 25px;
+}
+
+.section-heading {
+    border-top: 2px dashed #d0d0d0;
+    border-bottom: 1px solid #dedede;
+    padding: 18px 0 14px;
+}
+
+.section-heading h2 {
+    margin: 0;
+    font-size: 23px;
+    color: #303445;
+}
+
+/* ==========================================
+   EDIT FORM
+========================================== */
+
+.edit-form {
+    width: 100%;
+}
+
+.edit-row {
+    display: grid;
+    grid-template-columns: 32% 68%;
+    align-items: center;
+    min-height: 70px;
+    border-bottom: 1px solid #dedede;
+}
+
+.edit-row > label {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.edit-row > input,
+.edit-row > select {
+    width: 100%;
+    height: 44px;
+    border: 1px solid #c9c9ce;
+    border-radius: 5px;
+    padding: 0 13px;
+    font-size: 16px;
+    color: #303445;
+    background: white;
+    outline: none;
+}
+
+.edit-row input:focus,
+.edit-row select:focus,
+.date-wrapper:focus-within,
+.edit-row textarea:focus {
+    border-color: #2870b8;
+    box-shadow: 0 0 0 3px rgba(40, 112, 184, 0.1);
+}
+
+.edit-row input:disabled,
+.edit-row select:disabled,
+.edit-row textarea:disabled {
+    background: #f4f4f5;
+    color: #777;
+    cursor: not-allowed;
+}
+
+/* ==========================================
+   DATE
+========================================== */
+
+.date-wrapper {
+    height: 44px;
+    border: 1px solid #c9c9ce;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: white;
+}
+
+.date-wrapper span {
+    font-size: 18px;
+    padding-left: 13px;
+}
+
+.date-wrapper input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 12px;
+    font-size: 16px;
+    color: #303445;
+    background: transparent;
+}
+
+/* ==========================================
+   SELECT
+========================================== */
+
+.edit-row select {
+    appearance: auto;
+    cursor: pointer;
+}
+
+/* ==========================================
+   SPECIAL REQUESTS
+========================================== */
+
+.special-row {
+    align-items: start;
+    padding: 18px 0;
+}
+
+.special-row > label {
+    padding-top: 8px;
+}
+
+.special-row > div {
+    width: 100%;
+}
+
+.special-row textarea {
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+    border: 1px solid #c9c9ce;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 15px;
+    font-family: inherit;
+    color: #303445;
+    outline: none;
+}
+
+.helper-text {
+    margin: 7px 0 0;
+    color: #777;
+    font-size: 13px;
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.button-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-top: 25px;
+}
+
+.cancel-button,
+.save-button {
+    height: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.cancel-button {
+    border: 1px solid #bbb;
+    background: #e1e1e5;
+    color: #303445;
+}
+
+.save-button {
+    border: 1px solid #15972f;
+    background: linear-gradient(90deg, #2eb340, #25a83a);
+    color: white;
+}
+
+.cancel-button:hover {
+    background: #d4d4d8;
+}
+
+.save-button:hover {
+    background: #239f35;
+    transform: translateY(-1px);
+}
+
+.save-button:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.edit-footer {
+    margin-top: 15px;
+    min-height: 65px;
+    background: #f5f6f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    color: #777;
+    font-size: 13px;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 900px) {
+
+    .edit-container {
+        width: 92%;
+    }
+
+    .edit-header h1 {
+        font-size: 28px;
+    }
+
+    .edit-row {
+        grid-template-columns: 35% 65%;
+    }
+
+    .verify-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .edit-header {
+        height: 65px;
+    }
+
+    .edit-header h1 {
+        font-size: 24px;
+    }
+
+    .edit-container {
+        width: 94%;
+        padding-top: 20px;
+    }
+
+    .verify-form {
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+    }
+
+    .verify-button {
+        grid-column: 1;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .edit-row {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 14px 0;
+    }
+
+    .edit-row > label {
+        font-size: 16px;
+    }
+
+    .button-row {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .section-heading h2 {
+        font-size: 21px;
+    }
+}

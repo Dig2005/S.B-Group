@@ -1,0 +1,306 @@
+
+
+.hotel-page {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+button,
+a {
+    font-family: inherit;
+}
+
+
+.nav-links a:hover {
+    color: #f5bd38;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    height: 475px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 45%;
+    background: linear-gradient(
+            transparent,
+            rgba(0, 0, 0, 0.75)
+    );
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-family: Georgia, serif;
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.hero-content p {
+    font-size: 21px;
+    text-shadow: 1px 1px 4px #000;
+    color: white;
+}
+
+
+/* ================= MAIN CONTAINER ================= */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section {
+    padding: 25px 0;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+.section-title {
+    font-size: 25px;
+    color: #172c4c;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #bdbdbd;
+    padding-bottom: 9px;
+}
+
+
+/* ================= ROOM OVERVIEW ================= */
+
+.overview {
+    display: grid;
+    grid-template-columns: 44% 56%;
+    gap: 30px;
+}
+
+.room-gallery {
+    width: 100%;
+}
+
+.main-room-image {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+}
+
+.thumbnail-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 7px;
+    margin-top: 7px;
+}
+
+.thumbnail-container img {
+    width: 100%;
+    height: 75px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.thumbnail-container img:hover {
+    opacity: 0.7;
+}
+
+.room-description {
+    font-size: 18px;
+    line-height: 1.65;
+}
+
+.room-description p {
+    margin-bottom: 14px;
+    color: black;
+}
+
+.room-description strong {
+    color: #182b49;
+}
+
+.room-features {
+    list-style: none;
+    padding: 0;
+}
+
+.room-features li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 8px 0;
+}
+
+.feature-icon {
+    width: 27px;
+    font-size: 20px;
+}
+
+
+/* ================= PRICING ================= */
+
+.pricing-container {
+    display: grid;
+    grid-template-columns: 1.2fr 0.7fr 0.8fr;
+    gap: 32px;
+    align-items: center;
+}
+
+.price-card {
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    text-align: center;
+    padding: 14px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.12);
+    border-bottom: 8px solid #0754a5;
+}
+
+.price-card h3 {
+    font-size: 29px;
+    margin-bottom: 5px;
+}
+
+.price-card h3 span {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.price-card p {
+    font-size: 18px;
+    color: black;
+}
+
+.book-button,
+.contact-button {
+    border: none;
+    color: white;
+    height: 54px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.book-button {
+    background: #0564c5;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+.book-button:hover {
+    background: #034d98;
+}
+
+.contact-button {
+    background: linear-gradient(#68778b, #293548);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+.contact-button:hover {
+    background: #202b3a;
+}
+
+
+/* ================= TESTIMONIALS ================= */
+
+.center-title {
+    text-align: center;
+    color: #0b396e;
+    font-size: 25px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #bdbdbd;
+    padding-bottom: 9px;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.testimonial-card {
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+    background: #fafafa;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial-card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-content {
+    flex: 1;
+}
+
+.testimonial-content h3 {
+    font-size: 18px;
+    color: #123a6a;
+    margin-bottom: 20px;
+}
+
+.testimonial-content p {
+    text-align: right;
+    font-size: 16px;
+}
+
+
+/* ================= AMENITIES ================= */
+
+.amenities {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+
+.amenity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.amenity-icon {
+    width: 38px;
+    height: 38px;
+    background: #07569c;
+    color: white;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+}
+
+

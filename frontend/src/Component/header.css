@@ -1,0 +1,76 @@
+
+
+.home-container {
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+}
+
+.home-container {
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #003366;
+    color: white;
+
+    padding: 15px 40px;
+
+}
+
+
+
+.navbar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed; /* optional if you want it to stay on top */
+    top: 0;
+    left: 0;
+}
+
+.nav a{
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.contact-btn {
+    background: #ffcc00;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+.navbar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed; /* optional if you want it to stay on top */
+    top: 0;
+    left: 0;
+
+}
+
+.nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+
+}
+
+.contact-btn {
+    background: #ffcc00;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
