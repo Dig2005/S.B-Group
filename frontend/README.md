@@ -1210,7 +1210,7 @@ Cancelled bookings are retained in the database while being excluded from active
 
 ## 🏠 Home Page
 
-![Hotel Management System - Home Page](./Screenshot/home.jpeg)
+![Hotel Management System - Home Page](/Screenshot/home.jpeg)
 
 The home page provides navigation to the main features of the Hotel Management System.
 
