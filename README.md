@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🏨 Hotel Management System
 
 A full-stack Hotel Management System developed using React.js for the frontend and Spring Boot for the backend. The system allows customers to make hotel reservations and provides administrators with a dashboard to manage bookings, view reports, verify reservations, and cancel bookings.
@@ -1279,3 +1280,5 @@ S.B Group/
 │   └── booking-reports.png
 │
 └── README.md
+=======
+>>>>>>> a73c95d (Updated UI)

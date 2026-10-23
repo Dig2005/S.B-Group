@@ -1,10 +1,15 @@
 import "./room.css"
 //import "bootstrap/dist/css/bootstrap.min.css"
 import { useNavigate } from "react-router-dom";
+import Header from "./Header.jsx";
+import Hero from "./Hero.jsx";
 
 function Room(){
     const navigate = useNavigate();
     return(
+        <>
+            <Header></Header>
+            <Hero></Hero>
         <section className="rooms">
             <h2>Discover Our Rooms</h2>
             <hr color="#ffcc00"></hr>
@@ -34,6 +39,7 @@ function Room(){
                 </div>
             </div>
         </section>
+            </>
     );
 }
 export default Room;
